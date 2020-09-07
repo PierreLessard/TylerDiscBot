@@ -31,6 +31,5 @@ async def on_message(message):
         mbl[0] = message.content[len(message.content)-1]
         await message.channel.send("The command prefix has been changed to: " +  mbl[0])
 
-    if message.content.startswith(mb+)
 
 client.run(key)
