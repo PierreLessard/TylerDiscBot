@@ -25,11 +25,10 @@ async def on_message(message):
 
     if message.content.startswith(mb+'help'):
         await message.channel.send('Commands:')
-        await message.channel.send("'"+mb + "change new_classifier ----' This will change the the prefix on commands")
+        await message.channel.send("{}change \"new_prefix\" ----- This will change how I register commands".format(mb))
     
     if message.content.startswith(mb+'change'): 
         mbl[0] = message.content[len(message.content)-1]
         await message.channel.send("The command prefix has been changed to: " +  mbl[0])
-
 
 client.run(key)
